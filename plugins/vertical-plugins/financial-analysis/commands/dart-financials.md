@@ -16,13 +16,16 @@ Load the `dart-financials` skill and execute the following workflow:
    - 현금흐름표 (Cash Flow Statement)
    - 주석 데이터: 유형자산, 무형자산, 감가상각비, 상각비(EBITDA 조정용)
 
-3. Build a structured Excel workbook with the following sheets:
-   - **Sheet 1: Summary** — 핵심 재무지표 한눈에 보기 (매출, 영업이익, 순이익, EBITDA, 총자산, 부채비율)
-   - **Sheet 2: P&L (손익계산서)** — 매출, 매출원가, 매출총이익, 판관비, 영업이익, EBITDA, 세전이익, 순이익 / YoY or QoQ % 변화율 포함
-   - **Sheet 3: BS (재무상태표)** — 유동자산, 비유동자산(유형자산/무형자산 세분화), 총자산, 유동부채, 비유동부채, 자본 / YoY or QoQ % 변화율 포함
-   - **Sheet 4: CF (현금흐름표)** — 영업활동/투자활동/재무활동 현금흐름, FCF(영업CF - CAPEX) / YoY or QoQ % 변화율 포함
-   - **Sheet 5: Detail — PP&E / Intangibles** — 유형자산 취득원가/감가상각누계/장부가액, 무형자산 동일, 당기 감가상각비, 당기 무형자산상각비
-   - **Sheet 6: Key Ratios** — 수익성(ROE/ROA/영업이익률/순이익률), 안정성(부채비율/유동비율/이자보상배율), 성장성(매출증가율/영업이익증가율), 밸류에이션 기초(EPS/BPS)
+3. Build a structured Excel workbook with **8 sheets (재무제표 4 + 주석 4) by default**:
+   - **Sheet ① Summary** — 핵심 재무지표 + YoY/QoQ% + 주요비율(부채비율/이익률 등)
+   - **Sheet ② P&L (손익계산서)** — 매출~순이익, EBITDA / YoY or QoQ % 포함
+   - **Sheet ③ BS (재무상태표)** — 유동/비유동(유형·무형자산 세분화), 부채, 자본 / 변화율 포함
+   - **Sheet ④ CF (현금흐름표)** — 영업/투자/재무활동, CAPEX, FCF / 변화율 포함
+   - **Sheet ⑤ 주석_자산** — 유형자산·무형자산 증감표(기초/취득/처분/상각/기말), 투자지분(자회사 지분율·장부가)
+   - **Sheet ⑥ 주석_부채자본** — 차입금(이자율/만기/담보), 충당부채, 퇴직급여, 자본금, 결손금
+   - **Sheet ⑦ 주석_주주_SO** — 주주현황, 스톡옵션 변동, 특수관계자, 우발채무
+   - **Sheet ⑧ 주석_부가가치** — 급여·감가상각 등 비용 상세
+   - 주석 데이터는 감사보고서에 있으면 **반드시 모두 시트로 만든다 (디폴트)**.
 
 4. Excel formatting rules:
    - 헤더 행: 진한 배경 (네이비 #1F3864), 흰색 텍스트
